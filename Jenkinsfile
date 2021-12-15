@@ -5,7 +5,7 @@ pipeline {
     }
   }
   environment {
-    PROJECT = "simple-ecommerce"
+    PROJECT = "bookstore"
     DOCKER_ID = "mbohram"
     DOCKER_REPO = "${DOCKER_ID}/${PROJECT}"
     DOCKER_CONTEXT = "."
@@ -16,16 +16,10 @@ pipeline {
       steps {
         container("npm") {
           sh """
+          cd frontend
           npm install
-          """
-        }
-      }
-    }
-    stage("Lint-Eslint") {
-      steps {
-         container("npm") {
-          sh """
-          npm run lint
+          cd ../backend
+          npm install
           """
         }
       }
@@ -34,6 +28,7 @@ pipeline {
       steps {
         container("npm") {
           sh """
+          cd frontend
           npm run build
           """
         }

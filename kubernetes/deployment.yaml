@@ -18,5 +18,8 @@ spec:
       - name: bookstore
         image: mbohram/bookstore
         imagePullPolicy: Always
+        envFrom:
+        - secretRef:
+            name: bookstore
       imagePullSecrets:
       - name: regcred
