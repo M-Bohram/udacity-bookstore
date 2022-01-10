@@ -34,3 +34,6 @@ You should run both of them at the same time.
 6. make sure that changes pushed to the GitHub repository is triggered by Jenkins and a new version of the app is deployed
 
 P.S: The deployed app has both the frontend and backend.
+
+## Screenshots
+[Deploying EKS using CloudFormation (from a CLI command)](screenshots/eks-cluster-cloudformation.png)
