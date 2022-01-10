@@ -36,4 +36,8 @@ You should run both of them at the same time.
 P.S: The deployed app has both the frontend and backend.
 
 ## Screenshots
-![Deploying EKS using CloudFormation (from a CLI command)](screenshots/eks-cluster-cloudformation.png)
+Deploying EKS using CloudFormation (from a CLI command) - 1
+![Deploying EKS using CloudFormation](screenshots/eks-cluster-cloudformation.png)
+
+Deploying EKS using CloudFormation (from a CLI command) - 2
+![Deploying EKS using CloudFormation](screenshots/eks-cluster-cloudformation2.png)
